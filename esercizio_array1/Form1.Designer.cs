@@ -204,6 +204,7 @@
             this.btn_n7.TabIndex = 15;
             this.btn_n7.Text = "vedi clienti";
             this.btn_n7.UseVisualStyleBackColor = false;
+            this.btn_n7.Click += new System.EventHandler(this.btn_n7_Click);
             // 
             // btn_n8
             // 
@@ -215,6 +216,7 @@
             this.btn_n8.TabIndex = 16;
             this.btn_n8.Text = "vedi conti";
             this.btn_n8.UseVisualStyleBackColor = false;
+            this.btn_n8.Click += new System.EventHandler(this.btn_n8_Click);
             // 
             // btn_n9
             // 
