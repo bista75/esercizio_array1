@@ -15,6 +15,7 @@ namespace esercizio_array1
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void btn_n7_Click(object sender, EventArgs e)
@@ -46,6 +47,67 @@ namespace esercizio_array1
                 lst_saldi.Items.Add(saldi[i]);
             }
             btn_n9.Enabled = false;
+        }
+
+        private void btn_n1_Click(object sender, EventArgs e)
+        {
+
+            int[] saldi = { 11534, -2345, 3451, 127, 45673, -13, 3452 };
+            string[] nomi = { "Rossi Mario", "Bianchi Luigi", "Belli Giulia", "Dotti Fabio", "Merli Gianni", "Zeri Giulio", "Botti Maria" };
+            string[] conti = { "11264", "99780", "00342", "03419", "34562", "09887", "02341" };
+            lst_risultati.Items.Clear();
+            string contoCercato = txt_n1.Text.Trim();
+            bool trovato = false;
+
+            for (int i = 0; i < conti.Length; i++)
+            {
+                if (conti[i] == contoCercato)
+                {
+                    lst_risultati.Items.Add($"{nomi[i]}, {saldi[i]}");
+                    trovato = true;
+                    
+                }
+         
+            }
+            if (!trovato)
+            {
+                MessageBox.Show("Attenzione! Non esiste questo numero di conto");
+                txt_n1.Clear();
+                return;
+                
+            }
+            btn_n8.Enabled = false;
+
+        }
+
+        private void btn_n2_Click(object sender, EventArgs e)
+        {
+            int[] saldi = { 11534, -2345, 3451, 127, 45673, -13, 3452 };
+            string[] nomi = { "Rossi Mario", "Bianchi Luigi", "Belli Giulia", "Dotti Fabio", "Merli Gianni", "Zeri Giulio", "Botti Maria" };
+            string[] conti = { "11264", "99780", "00342", "03419", "34562", "09887", "02341" };
+            lst_risultati.Items.Clear();
+            string nomeCercato = txt_n2.Text.Trim();
+            bool trovato = false;
+
+            for (int i = 0; i < nomi.Length; i++)
+            {
+                if (nomi[i] == nomeCercato)
+                {
+                    lst_risultati.Items.Add($"{conti[i]}, {saldi[i]}");
+                    trovato = true;
+
+                }
+
+            }
+            if (!trovato)
+            {
+                MessageBox.Show("Attenzione! Non esiste un cliente con questo nome");
+                txt_n1.Clear();
+                return;
+
+            }
+            btn_n8.Enabled = false;
+            
         }
     }
 }

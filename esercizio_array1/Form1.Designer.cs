@@ -100,6 +100,7 @@
             this.btn_n1.TabIndex = 5;
             this.btn_n1.Text = "vedi persona e saldo";
             this.btn_n1.UseVisualStyleBackColor = false;
+            this.btn_n1.Click += new System.EventHandler(this.btn_n1_Click);
             // 
             // btn_n2
             // 
@@ -111,6 +112,7 @@
             this.btn_n2.TabIndex = 6;
             this.btn_n2.Text = "vedi numero conto e saldo";
             this.btn_n2.UseVisualStyleBackColor = false;
+            this.btn_n2.Click += new System.EventHandler(this.btn_n2_Click);
             // 
             // button3
             // 
