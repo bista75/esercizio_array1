@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.lst_nomi = new System.Windows.Forms.ListBox();
-            this.lst_conto = new System.Windows.Forms.ListBox();
-            this.lst_saldo = new System.Windows.Forms.ListBox();
+            this.lst_conti = new System.Windows.Forms.ListBox();
+            this.lst_saldi = new System.Windows.Forms.ListBox();
             this.lst_risultati = new System.Windows.Forms.ListBox();
             this.txt_n1 = new System.Windows.Forms.TextBox();
             this.btn_n1 = new System.Windows.Forms.Button();
@@ -56,21 +56,21 @@
             this.lst_nomi.Size = new System.Drawing.Size(163, 121);
             this.lst_nomi.TabIndex = 0;
             // 
-            // lst_conto
+            // lst_conti
             // 
-            this.lst_conto.FormattingEnabled = true;
-            this.lst_conto.Location = new System.Drawing.Point(296, 78);
-            this.lst_conto.Name = "lst_conto";
-            this.lst_conto.Size = new System.Drawing.Size(169, 121);
-            this.lst_conto.TabIndex = 1;
+            this.lst_conti.FormattingEnabled = true;
+            this.lst_conti.Location = new System.Drawing.Point(296, 78);
+            this.lst_conti.Name = "lst_conti";
+            this.lst_conti.Size = new System.Drawing.Size(169, 121);
+            this.lst_conti.TabIndex = 1;
             // 
-            // lst_saldo
+            // lst_saldi
             // 
-            this.lst_saldo.FormattingEnabled = true;
-            this.lst_saldo.Location = new System.Drawing.Point(564, 78);
-            this.lst_saldo.Name = "lst_saldo";
-            this.lst_saldo.Size = new System.Drawing.Size(171, 121);
-            this.lst_saldo.TabIndex = 2;
+            this.lst_saldi.FormattingEnabled = true;
+            this.lst_saldi.Location = new System.Drawing.Point(564, 78);
+            this.lst_saldi.Name = "lst_saldi";
+            this.lst_saldi.Size = new System.Drawing.Size(171, 121);
+            this.lst_saldi.TabIndex = 2;
             // 
             // lst_risultati
             // 
@@ -228,6 +228,7 @@
             this.btn_n9.TabIndex = 17;
             this.btn_n9.Text = "vedi saldi";
             this.btn_n9.UseVisualStyleBackColor = false;
+            this.btn_n9.Click += new System.EventHandler(this.btn_n9_Click);
             // 
             // Form1
             // 
@@ -250,8 +251,8 @@
             this.Controls.Add(this.btn_n1);
             this.Controls.Add(this.txt_n1);
             this.Controls.Add(this.lst_risultati);
-            this.Controls.Add(this.lst_saldo);
-            this.Controls.Add(this.lst_conto);
+            this.Controls.Add(this.lst_saldi);
+            this.Controls.Add(this.lst_conti);
             this.Controls.Add(this.lst_nomi);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -263,8 +264,8 @@
         #endregion
 
         private System.Windows.Forms.ListBox lst_nomi;
-        private System.Windows.Forms.ListBox lst_conto;
-        private System.Windows.Forms.ListBox lst_saldo;
+        private System.Windows.Forms.ListBox lst_conti;
+        private System.Windows.Forms.ListBox lst_saldi;
         private System.Windows.Forms.ListBox lst_risultati;
         private System.Windows.Forms.TextBox txt_n1;
         private System.Windows.Forms.Button btn_n1;
