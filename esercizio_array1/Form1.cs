@@ -55,7 +55,7 @@ namespace esercizio_array1
             int[] saldi = { 11534, -2345, 3451, 127, 45673, -13, 3452 };
             string[] nomi = { "Rossi Mario", "Bianchi Luigi", "Belli Giulia", "Dotti Fabio", "Merli Gianni", "Zeri Giulio", "Botti Maria" };
             string[] conti = { "11264", "99780", "00342", "03419", "34562", "09887", "02341" };
-            lst_risultati.Items.Clear();
+            //lst_risultati.Items.Clear();
             string contoCercato = txt_n1.Text.Trim();
             bool trovato = false;
 
@@ -63,8 +63,12 @@ namespace esercizio_array1
             {
                 if (conti[i] == contoCercato)
                 {
-                    lst_risultati.Items.Add($"{nomi[i]}, {saldi[i]}");
-                    trovato = true;
+                    if (!lst_risultati.Items.Contains($"{nomi[i]}, {saldi[i]}"))
+                    {
+                        lst_risultati.Items.Add($"{nomi[i]}, {saldi[i]}");
+                        trovato = true;
+                    }
+                    
                     
                 }
          
@@ -85,7 +89,7 @@ namespace esercizio_array1
             int[] saldi = { 11534, -2345, 3451, 127, 45673, -13, 3452 };
             string[] nomi = { "Rossi Mario", "Bianchi Luigi", "Belli Giulia", "Dotti Fabio", "Merli Gianni", "Zeri Giulio", "Botti Maria" };
             string[] conti = { "11264", "99780", "00342", "03419", "34562", "09887", "02341" };
-            lst_risultati.Items.Clear();
+            //lst_risultati.Items.Clear();
             string nomeCercato = txt_n2.Text.Trim();
             bool trovato = false;
 
@@ -93,9 +97,11 @@ namespace esercizio_array1
             {
                 if (nomi[i] == nomeCercato)
                 {
-                    lst_risultati.Items.Add($"{conti[i]}, {saldi[i]}");
-                    trovato = true;
-
+                    if (!lst_risultati.Items.Contains($"{conti[i]}, {saldi[i]}"))
+                    {
+                        lst_risultati.Items.Add($"{conti[i]}, {saldi[i]}");
+                        trovato = true;
+                    }
                 }
 
             }
