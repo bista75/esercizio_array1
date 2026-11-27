@@ -151,6 +151,24 @@ namespace esercizio_array1
 
         private void btn_n5_Click(object sender, EventArgs e)
         {
+            int[] saldi = { 11534, -2345, 3451, 127, 45673, -13, 3452 };
+            int totale = 0;
+            float media;
+            string[] nomi = { "Rossi Mario", "Bianchi Luigi", "Belli Giulia", "Dotti Fabio", "Merli Gianni", "Zeri Giulio", "Botti Maria" };
+
+
+            for (int i = 0; i < saldi.Length; i++)
+            {
+                totale += saldi[i];
+
+            }
+            media = (float) totale / saldi.Length;
+            lst_risultati.Items.Add(media);
+
+        }
+
+        private void btn_n6_Click(object sender, EventArgs e)
+        {
 
         }
     }

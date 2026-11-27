@@ -158,6 +158,7 @@
             this.btn_n6.TabIndex = 10;
             this.btn_n6.Text = "vedi saldi in modo crescente";
             this.btn_n6.UseVisualStyleBackColor = false;
+            this.btn_n6.Click += new System.EventHandler(this.btn_n6_Click);
             // 
             // txt_n2
             // 
