@@ -43,15 +43,13 @@
             this.lbl_n1 = new System.Windows.Forms.Label();
             this.lbl_n2 = new System.Windows.Forms.Label();
             this.lbl_n3 = new System.Windows.Forms.Label();
-            this.btn_n7 = new System.Windows.Forms.Button();
             this.btn_n8 = new System.Windows.Forms.Button();
-            this.btn_n9 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lst_nomi
             // 
             this.lst_nomi.FormattingEnabled = true;
-            this.lst_nomi.Location = new System.Drawing.Point(31, 78);
+            this.lst_nomi.Location = new System.Drawing.Point(96, 78);
             this.lst_nomi.Name = "lst_nomi";
             this.lst_nomi.Size = new System.Drawing.Size(163, 121);
             this.lst_nomi.TabIndex = 0;
@@ -67,7 +65,7 @@
             // lst_saldi
             // 
             this.lst_saldi.FormattingEnabled = true;
-            this.lst_saldi.Location = new System.Drawing.Point(564, 78);
+            this.lst_saldi.Location = new System.Drawing.Point(499, 78);
             this.lst_saldi.Name = "lst_saldi";
             this.lst_saldi.Size = new System.Drawing.Size(171, 121);
             this.lst_saldi.TabIndex = 2;
@@ -124,6 +122,7 @@
             this.button3.TabIndex = 7;
             this.button3.Text = "vedi nomi con conto negativo";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btn_n4
             // 
@@ -135,6 +134,7 @@
             this.btn_n4.TabIndex = 8;
             this.btn_n4.Text = "vedi cliente con saldo massimo";
             this.btn_n4.UseVisualStyleBackColor = false;
+            this.btn_n4.Click += new System.EventHandler(this.btn_n4_Click);
             // 
             // btn_n5
             // 
@@ -146,6 +146,7 @@
             this.btn_n5.TabIndex = 9;
             this.btn_n5.Text = "vedi media saldi";
             this.btn_n5.UseVisualStyleBackColor = false;
+            this.btn_n5.Click += new System.EventHandler(this.btn_n5_Click);
             // 
             // btn_n6
             // 
@@ -196,41 +197,17 @@
             this.lbl_n3.TabIndex = 14;
             this.lbl_n3.Text = "BANCA AURA";
             // 
-            // btn_n7
-            // 
-            this.btn_n7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_n7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_n7.Location = new System.Drawing.Point(58, 49);
-            this.btn_n7.Name = "btn_n7";
-            this.btn_n7.Size = new System.Drawing.Size(87, 23);
-            this.btn_n7.TabIndex = 15;
-            this.btn_n7.Text = "vedi clienti";
-            this.btn_n7.UseVisualStyleBackColor = false;
-            this.btn_n7.Click += new System.EventHandler(this.btn_n7_Click);
-            // 
             // btn_n8
             // 
             this.btn_n8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_n8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_n8.Location = new System.Drawing.Point(339, 49);
+            this.btn_n8.Location = new System.Drawing.Point(296, 49);
             this.btn_n8.Name = "btn_n8";
-            this.btn_n8.Size = new System.Drawing.Size(84, 23);
+            this.btn_n8.Size = new System.Drawing.Size(163, 23);
             this.btn_n8.TabIndex = 16;
-            this.btn_n8.Text = "vedi conti";
+            this.btn_n8.Text = "vedi clienti, conti e saldi";
             this.btn_n8.UseVisualStyleBackColor = false;
             this.btn_n8.Click += new System.EventHandler(this.btn_n8_Click);
-            // 
-            // btn_n9
-            // 
-            this.btn_n9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_n9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_n9.Location = new System.Drawing.Point(609, 49);
-            this.btn_n9.Name = "btn_n9";
-            this.btn_n9.Size = new System.Drawing.Size(86, 23);
-            this.btn_n9.TabIndex = 17;
-            this.btn_n9.Text = "vedi saldi";
-            this.btn_n9.UseVisualStyleBackColor = false;
-            this.btn_n9.Click += new System.EventHandler(this.btn_n9_Click);
             // 
             // Form1
             // 
@@ -238,9 +215,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Goldenrod;
             this.ClientSize = new System.Drawing.Size(747, 487);
-            this.Controls.Add(this.btn_n9);
             this.Controls.Add(this.btn_n8);
-            this.Controls.Add(this.btn_n7);
             this.Controls.Add(this.lbl_n3);
             this.Controls.Add(this.lbl_n2);
             this.Controls.Add(this.lbl_n1);
@@ -280,9 +255,7 @@
         private System.Windows.Forms.Label lbl_n1;
         private System.Windows.Forms.Label lbl_n2;
         private System.Windows.Forms.Label lbl_n3;
-        private System.Windows.Forms.Button btn_n7;
         private System.Windows.Forms.Button btn_n8;
-        private System.Windows.Forms.Button btn_n9;
     }
 }
 
